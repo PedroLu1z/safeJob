@@ -5,7 +5,7 @@ import Cadastro from './pages/Cadastro';
 import CadastroEmpresa from './pages/CadastroEmpresa';
 import Home from './pages/Home';
 import Sobre from './pages/Sobre';
-
+import Footer from './components/Footer'
 
 
 function RoutesApp(){
@@ -21,6 +21,7 @@ function RoutesApp(){
 
                     <Route path='*' element={ <Erro/> } />
                 </Routes>
+            <Footer/>
         </BrowserRouter>        
     )
 }
