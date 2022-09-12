@@ -29,6 +29,7 @@ $open-hb: 1090px;
         .menubar {
             display: flex;
             align-items: center;
+            list-style: none;
             //-color: rgb(210, 210, 255);
             @media screen and(max-width: $open-hb) {
                 position: fixed;
@@ -112,7 +113,7 @@ $open-hb: 1090px;
                     margin: 0 3rem;
                     font-size: 18px;
                     color: #000000;
-
+        
                     @media screen and(max-width: $open-hb) {
                         font-size: 28px;
                     }
