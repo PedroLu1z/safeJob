@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import imgCadastro from '../img/img_cadastro.png'
 import { User, Mail, Key, Globe, Printer, Folder, Calendar } from 'react-feather'
 
-function CadastroEmpresa(){
-    return(
+function LoginEmpresa() {
+  return (
         <div className='container_cadastro'>
 
             <picture>
@@ -16,13 +16,6 @@ function CadastroEmpresa(){
                     <h1 className='safejob'>SafeJob</h1>
                 </div>
                 <hr/>          
-                <div className='container_fases'>
-                    <User size={25} className='icon'/>         
-                    <div>
-                        <label htmlFor="">Nome da Empresa</label>
-                        <input className='input_igual' type="text" name='nome' placeholder='Nome'/>
-                    </div>
-                </div>
                 <div className='container_fases'>
                     <Mail size={25}/>
                     <div>
@@ -37,25 +30,18 @@ function CadastroEmpresa(){
                         <input className='input_igual' type="password" name='senha' placeholder='Senha' />
                     </div>
                 </div>
-                <div className='container_fases'>
-                    <Printer/>
-                    <div>
-                        <label htmlFor="">CNPJ</label>
-                        <input className='input_igual' type="text" name='cidade' placeholder='CNPJ' />
-                    </div>
+                <div className='check'>                   
+                    <input type="checkbox" />
+                    <label id='relembrar' htmlFor="">Relembre o login</label>
+                    <a className='esqueci' href="#">Esqueci a senha</a>
                 </div>
-                <div className='container_fases'>
-                    <Globe/>
-                    <div>
-                        <label htmlFor="">Endereço</label>
-                        <input className='input_igual' type="text" name='cpf' placeholder='Endereço' />
-                    </div>
+                <div>
+                   
                 </div>
-                <button className='registrar'>Registrar-se</button>
-                <p>Já se registrou?<a href="#">Logar</a></p>
+                <button className='registrar'>Logar</button>
             </form>
         </div>
-    )
+  );
 }
 
-export default CadastroEmpresa;
+export default LoginEmpresa;

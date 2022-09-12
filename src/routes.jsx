@@ -6,6 +6,8 @@ import CadastroEmpresa from './pages/CadastroEmpresa';
 import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Footer from './components/Footer'
+import Login from './pages/Login';
+import LoginEmpresa from './pages/LoginEmpresa';
 
 
 function RoutesApp(){
@@ -17,7 +19,8 @@ function RoutesApp(){
                     <Route path='/cadastro' element= { <Cadastro/> }/>
                     <Route path='/cadastroempresa' element={ <CadastroEmpresa/> } />
                     <Route path='/sobre' element={ <Sobre/> } />
-
+                    <Route path='/login-usuario' element={<Login/>}/>
+                    <Route path='/login-empresa' element={<LoginEmpresa/>}/>
 
                     <Route path='*' element={ <Erro/> } />
                 </Routes>
