@@ -1,4 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
+import Profile from './pages/PaginaCandidato/profile';
 import Erro from './components/Erro';
 import Navbar from './components/Navbar'
 import Cadastro from './pages/Cadastro';
@@ -8,7 +10,6 @@ import Sobre from './pages/Sobre';
 import Footer from './components/Footer'
 import Login from './pages/Login';
 import LoginEmpresa from './pages/LoginEmpresa';
-
 
 function RoutesApp(){
     return(
@@ -28,5 +29,6 @@ function RoutesApp(){
         </BrowserRouter>        
     )
 }
+
 
 export default RoutesApp;

@@ -5,6 +5,7 @@ import './style_login.css'
 import { Link } from 'react-router-dom'
 
 export default function Login() {
+
   return (
     <div className="container_cadastro">
         <picture>
@@ -43,4 +44,4 @@ export default function Login() {
         </form>
     </div>
   );
-}
+}   
